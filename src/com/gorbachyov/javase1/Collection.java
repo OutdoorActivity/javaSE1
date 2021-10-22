@@ -9,7 +9,7 @@ public class Collection {
     public static void main(String[] args) {
         Set<Employee> employeesSet = new HashSet<>();
         employeesSet.add(new TeamLead("Александр", 1));
-        employeesSet.add(new Developer("Евгений", 2));
+        employeesSet.add(Developer.developerMethod("Евгений", 2));
         employeesSet.add(new Trainee("Николай", 3));
         for (Employee employee : employeesSet) {
             System.out.println(employee);
@@ -17,7 +17,9 @@ public class Collection {
         List<Set<Employee>> employeesList = new ArrayList<Set<Employee>>();
         employeesList.add(employeesSet);
         for (Set<Employee> employee : employeesList) {
-            System.out.println(employee);
+            for (Employee employee1 : employee) {
+                System.out.println(employee1);
+            }
         }
     }
 

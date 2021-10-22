@@ -4,18 +4,20 @@ public class Trainee extends Employee {
     private String name;
     private int id;
 
-    @Override
-    public String toString() {
-        return "Trainee{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                '}';
-    }
-
     public Trainee(String name, int id) {
         this.name = name;
         this.id = id;
     }
+
+    @Override
+    public void work() {
+        System.out.println("trainee");
+    }
+
+    protected void traineeMethod() {
+        System.out.println(name + "doing something");
+    }
+
 
     @Override
     public String getName() {
@@ -38,7 +40,12 @@ public class Trainee extends Employee {
     }
 
     @Override
-    public void work() {
-        System.out.println("trainee");
+    public String toString() {
+        return "Trainee{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                '}';
     }
+
+
 }

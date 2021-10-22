@@ -6,6 +6,10 @@ public abstract class Employee {
 
     public abstract void work();
 
+    public String employeeMethod() {
+        return "this is employee method";
+    }
+
     public String getName() {
         return name;
     }
