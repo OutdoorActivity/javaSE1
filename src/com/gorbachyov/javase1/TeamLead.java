@@ -24,6 +24,7 @@ public class TeamLead extends Employee implements Manager {
     }
 
 
+    //<editor-fold desc="get and set methods">
     @Override
     public String getName() {
         return name;
@@ -43,6 +44,7 @@ public class TeamLead extends Employee implements Manager {
     public void setId(int id) {
         this.id = id;
     }
+    //</editor-fold>
 
     @Override
     public String toString() {

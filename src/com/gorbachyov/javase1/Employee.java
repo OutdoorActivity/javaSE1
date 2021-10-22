@@ -4,12 +4,15 @@ public abstract class Employee {
     private String name;
     private int id;
 
+
     public abstract void work();
 
     public String employeeMethod() {
         return "this is employee method";
     }
 
+
+    //<editor-fold desc="get and set methods">
     public String getName() {
         return name;
     }
@@ -25,4 +28,6 @@ public abstract class Employee {
     public void setId(int id) {
         this.id = id;
     }
+    //</editor-fold>
+
 }

@@ -19,6 +19,7 @@ public class Developer extends Employee {
     }
 
 
+    //<editor-fold desc="get and set methods">
     @Override
     public String getName() {
         return name;
@@ -38,6 +39,7 @@ public class Developer extends Employee {
     public void setId(int id) {
         this.id = id;
     }
+    //</editor-fold>
 
     @Override
     public String toString() {
