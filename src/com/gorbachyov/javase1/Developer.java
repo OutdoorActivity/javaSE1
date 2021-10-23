@@ -1,51 +1,48 @@
 package com.gorbachyov.javase1;
 
 public class Developer extends Employee {
-    private String name;
-    private int id;
+    private String address;
+    private int salary;
 
-    private Developer(String name, int id) {
-        this.name = name;
-        this.id = id;
+
+    private Developer(String address, int salary) {
+        this.address = address;
+        this.salary = salary;
     }
+
 
     @Override
     public void work() {
         System.out.println("dev working...");
     }
 
-    public static Developer developerMethod(String name, int id) {
-        return new Developer(name, id);
+    public static Developer developerMethod(String address, int salary) {
+        return new Developer(address, salary);
     }
-
 
     //<editor-fold desc="get and set methods">
-    @Override
-    public String getName() {
-        return name;
+    public String getAddress() {
+        return address;
     }
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    @Override
-    public int getId() {
-        return id;
+    public int getSalary() {
+        return salary;
     }
 
-    @Override
-    public void setId(int id) {
-        this.id = id;
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
+
     //</editor-fold>
-
     @Override
     public String toString() {
         return "Developer{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
+                "address='" + address + '\'' +
+                ", salary=" + salary +
                 '}';
     }
 

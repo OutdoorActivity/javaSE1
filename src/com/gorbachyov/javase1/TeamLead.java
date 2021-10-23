@@ -1,12 +1,13 @@
 package com.gorbachyov.javase1;
 
 public class TeamLead extends Employee implements Manager {
-    private String name;
-    private int id;
+    private String role;
+    private int level;
 
-    public TeamLead(String name, int id) {
-        this.name = name;
-        this.id = id;
+
+    public TeamLead(String role, int level) {
+        this.role = role;
+        this.level = level;
     }
 
     private void teamLeadMethod() {
@@ -25,32 +26,28 @@ public class TeamLead extends Employee implements Manager {
 
 
     //<editor-fold desc="get and set methods">
-    @Override
-    public String getName() {
-        return name;
+    public String getRole() {
+        return role;
     }
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public void setRole(String role) {
+        this.role = role;
     }
 
-    @Override
-    public int getId() {
-        return id;
+    public int getLevel() {
+        return level;
     }
 
-    @Override
-    public void setId(int id) {
-        this.id = id;
+    public void setLevel(int level) {
+        this.level = level;
     }
+
     //</editor-fold>
-
     @Override
     public String toString() {
         return "TeamLead{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
+                "role='" + role + '\'' +
+                ", level=" + level +
                 '}';
     }
 

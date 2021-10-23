@@ -1,12 +1,12 @@
 package com.gorbachyov.javase1;
 
 public class Trainee extends Employee {
-    private String name;
-    private int id;
+    private String traineeField1;
+    private double traineeField2;
 
-    public Trainee(String name, int id) {
-        this.name = name;
-        this.id = id;
+    public Trainee(String traineeField1, double traineeField2) {
+        this.traineeField1 = traineeField1;
+        this.traineeField2 = traineeField2;
     }
 
     @Override
@@ -15,39 +15,33 @@ public class Trainee extends Employee {
     }
 
     protected void traineeMethod() {
-        System.out.println(name + "doing something");
+        System.out.println("doing something");
     }
 
 
     //<editor-fold desc="get and set methods">
-    @Override
-    public String getName() {
-        return name;
+    public String getTraineeField1() {
+        return traineeField1;
     }
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public void setTraineeField1(String traineeField1) {
+        this.traineeField1 = traineeField1;
     }
 
-    @Override
-    public int getId() {
-        return id;
+    public double getTraineeField2() {
+        return traineeField2;
     }
 
-    @Override
-    public void setId(int id) {
-        this.id = id;
+    public void setTraineeField2(double traineeField2) {
+        this.traineeField2 = traineeField2;
     }
     //</editor-fold>
 
     @Override
     public String toString() {
         return "Trainee{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
+                "traineeField1='" + traineeField1 + '\'' +
+                ", traineeField2=" + traineeField2 +
                 '}';
     }
-
-
 }
