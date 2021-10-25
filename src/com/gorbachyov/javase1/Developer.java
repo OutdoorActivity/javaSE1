@@ -4,6 +4,9 @@ public class Developer extends Employee {
     private String address;
     private int salary;
 
+    public Developer(String name) {
+        setName(name);
+    }
 
     private Developer(String address, int salary) {
         this.address = address;

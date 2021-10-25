@@ -4,6 +4,9 @@ public class TeamLead extends Employee implements Manager {
     private String role;
     private int level;
 
+    public TeamLead(String name) {
+       setName(name);
+    }
 
     public TeamLead(String role, int level) {
         this.role = role;

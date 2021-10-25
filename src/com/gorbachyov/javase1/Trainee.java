@@ -4,6 +4,10 @@ public class Trainee extends Employee {
     private String traineeField1;
     private double traineeField2;
 
+    public Trainee(String name) {
+        setName(name);
+    }
+
     public Trainee(String traineeField1, double traineeField2) {
         this.traineeField1 = traineeField1;
         this.traineeField2 = traineeField2;
